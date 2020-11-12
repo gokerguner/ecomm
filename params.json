@@ -1,0 +1,19 @@
+{
+  "DEBUG": 1,
+  "DEBUG_LOG_LEVEL": "INFO",
+  "WORK_MODE": 0,
+  "DB_MODE": 1,
+  "DIR_DATA": "./data",
+  "DB_HOST_IP": "localhost",
+  "DB_HOST_PORT": 27017,
+  "DB_REPLICA_SET_NAME": null,
+  "REDIS_HOST_IP": "localhost",
+  "REDIS_HOST_PORT": 6379,
+  "DB_MAX_SERV_DELAY": 10,
+  "MAXSEVSELDELAY": 60000,
+  "NEO4J_INST_HOST_IP": "localhost",
+  "NEO4J_PASS": "pass4j",
+  "DB": "ecomm",
+  "REDIS_SENTINEL_SERVICE_NAME": null,
+  "DB_HEPSIBURADA_COLLECTION": "hepsiburada"
+}
