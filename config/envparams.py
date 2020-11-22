@@ -52,6 +52,10 @@ class Params(object):
             self.DB_HEPSIBURADA_COLLECTION = self._jparams["DB_HEPSIBURADA_COLLECTION"]
         else:
             self.DB_HEPSIBURADA_COLLECTION = "hepsiburada"
+        if "DB_HEPSIBURADA_COMMENTS_COLLECTION" in self._jparams:
+            self.DB_HEPSIBURADA_COMMENTS_COLLECTION = self._jparams["DB_HEPSIBURADA_COMMENTS_COLLECTION"]
+        else:
+            self.DB_HEPSIBURADA_COMMENTS_COLLECTION = "hepsiburada_comments"
 
         if "DB_REPLICA_SET_NAME" in self._jparams:
             self.DB_REPLICA_SET_NAME = self._jparams["DB_REPLICA_SET_NAME"]

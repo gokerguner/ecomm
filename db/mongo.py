@@ -78,8 +78,14 @@ def getDb(client, DB_NAME, logging=None):
 
 def createIndexes(client, prms, logging=None):
     db = getDb(client, prms.DB, logging=logging)
-    ##iposts
+    ##hepsiburada
     _result = db[prms.DB_HEPSIBURADA_COLLECTION].create_index('id', unique=True)
     logging.debug("Unique index param set as <id> for collection:{collection} : {status}".format(
         collection=prms.DB_HEPSIBURADA_COLLECTION,
         status=_result))
+    ##hepsiburada_comments
+    _result = db[prms.DB_HEPSIBURADA_COMMENTS_COLLECTION].create_index('product_id', unique=True)
+    logging.debug("Unique index param set as <id> for collection:{collection} : {status}".format(
+        collection=prms.DB_HEPSIBURADA_COLLECTION,
+        status=_result))
+
